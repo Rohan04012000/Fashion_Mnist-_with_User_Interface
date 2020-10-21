@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> FASHION MNIST MULTI CLASSIFICATION </title>
+</head>
+<body>
+<div id = "menu" align = "center">
+    <h1> Fashion Mnist Classification </h1>
+      <h5> Classify the fashion class </h5>
+</div>
+
+<div class = "row">
+      <form action = '/predict' method = "post" class = "col s12">
+      <div class = "row">
+
+            <div id = "temp" align = "center">
+                <label for = "first_name"><b> Enter the image number for model prediction </b></label>
+                <br>
+                <input placeholder = "image number" name = "Number" id = "first_name" type = "text" class = "validate">
+            </div>
+
+      </div>
+          <br><br>
+       <div id = "predic" align="center">
+          <button type = "submit" class = "btn-large waves-effect waves-light orange"> Predict the class </button>
+      </div>
+
+      </form>
+</div>
+<p style = "text-align:center">{{pred}}</p>
+
+</body>
+</html>
